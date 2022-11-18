@@ -12,6 +12,7 @@ class FormularioPlatos(forms.Form):
     nombre = forms.CharField(
         required = True,
         max_length = 250,
+        label = 'Nombre del plato ',
         widget = forms.TextInput(attrs={'class': 'form-control mb-3'})
     )
     fotografia = forms.CharField(
