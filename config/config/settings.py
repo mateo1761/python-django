@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dbrestaurante',
         'USER' : 'root',
-        'PASSWORD' : 'AI!0%ZCrv!Py'
+        'PASSWORD' : ''
     }
 }
 

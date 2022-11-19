@@ -123,12 +123,12 @@ class DjangoSession(models.Model):
 
 
 class Empleados(models.Model):
-    nombre_empleado = models.CharField(max_length=250, blank=True, null=True)
-    apellido_empleado = models.CharField(max_length=250, blank=True, null=True)
-    fotografia = models.CharField(max_length=500, blank=True, null=True)
-    cargo = models.IntegerField(blank=True, null=True)
-    salario = models.IntegerField(blank=True, null=True)
-    contacto = models.CharField(max_length=250, blank=True, null=True)
+    nombre = models.CharField(max_length=250)
+    apellido = models.CharField(max_length=250)
+    imagen = models.CharField(max_length=200)
+    cargo = models.CharField(max_length=200)
+    salario = models.IntegerField()
+    contacto = models.CharField(max_length=200)
 
     class Meta:
         managed = False
@@ -136,11 +136,11 @@ class Empleados(models.Model):
 
 
 class Platos(models.Model):
-    nombre_plato = models.CharField(max_length=250, blank=True, null=True)
-    fotografia = models.CharField(max_length=500, blank=True, null=True)
-    precio = models.IntegerField(blank=True, null=True)
-    tipo = models.IntegerField(blank=True, null=True)
-    descripcion = models.CharField(max_length=250, blank=True, null=True)
+    nombre = models.CharField(max_length=50)
+    descripcion = models.CharField(max_length=200)
+    imagen = models.CharField(max_length=200)
+    precio = models.IntegerField()
+    tipo = models.IntegerField()
 
     class Meta:
         managed = False
